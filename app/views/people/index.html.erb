@@ -2,10 +2,12 @@
 
 <h1>People</h1>
 
-<table>
-  <thead>
+<table class="table table-striped">
+  <thead class="thead-dark">
     <tr>
+      <th>Last name</th>
       <th>Name</th>
+      <th>Father name</th>
       <th>Email</th>
       <th>Phone</th>
       <th>Data</th>
@@ -17,7 +19,9 @@
   <tbody>
     <% @people.each do |person| %>
       <tr>
+        <td><%= person.last_name %></td>
         <td><%= person.name %></td>
+        <td><%= person.father_name %></td>
         <td><%= person.email %></td>
         <td><%= person.phone %></td>
         <td><%= person.data %></td>
