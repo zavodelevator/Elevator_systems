@@ -65,6 +65,6 @@ class FirmsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def firm_params
-      params.require(:firm).permit(:name, :edrpou, :email, :ipn, :data)
+      params.require(:firm).permit(:name, :edrpou, :email, :ipn, :data, :user_id)
     end
 end

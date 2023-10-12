@@ -1,27 +1,30 @@
-<div id="<%= dom_id firm %>">
-  <p>
-    <strong>Name:</strong>
-    <%= firm.name %>
-  </p>
+<div id="<%= dom_id firm %>" class="card bg-dark text-white">
+  <div class="card-body">
+    <p class="card-text">
+      <strong>Name:</strong>
+      <%= firm.name %>
+    </p>
 
-  <p>
-    <strong>Edrpou:</strong>
-    <%= firm.edrpou %>
-  </p>
+    <p class="card-text">
+      <strong>Edrpou:</strong>
+      <%= firm.edrpou %>
+    </p>
 
-  <p>
-    <strong>Email:</strong>
-    <%= firm.email %>
-  </p>
+    <p class="card-text">
+      <strong>Email:</strong>
+      <%= firm.email %>
+    </p>
 
-  <p>
-    <strong>Ipn:</strong>
-    <%= firm.ipn %>
-  </p>
+    <p class="card-text">
+      <strong>Ipn:</strong>
+      <%= firm.ipn %>
+    </p>
 
-  <p>
-    <strong>Data:</strong>
-    <%= firm.data %>
-  </p>
+    <p class="card-text">
+      <strong>Data:</strong>
+      <%= firm.data %>
+    </p>
 
+    <%= form.text_field :user_id, class: 'form-control', id: 'firm_user_id', placeholder: 'User ID' %>
+  </div>
 </div>
